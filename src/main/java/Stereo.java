@@ -1,11 +1,21 @@
 public class Stereo extends Component implements IPlayCD, IPlayRecord {
 
+    private String stereoName;
     private String cdName;
     private String recordName;
 
-    public Stereo() {
+    public Stereo(String stereoName) {
+        this.stereoName = stereoName;
         this.cdName = cdName;
         this.recordName = recordName;
+    }
+
+    public String getStereoName() {
+        return stereoName;
+    }
+
+    public void setStereoName(String stereoName) {
+        this.stereoName = stereoName;
     }
 
     public String getCdName() {

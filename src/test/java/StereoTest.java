@@ -10,8 +10,8 @@ public class StereoTest {
 
     @Before
     public void setUp() throws Exception {
-        stereo1 = new Stereo();
-        stereo2 = new Stereo();
+        stereo1 = new Stereo("Sony Stereo");
+        stereo2 = new Stereo("Philips Stereo");
     }
 
     @Test
@@ -80,5 +80,16 @@ public class StereoTest {
     public void playRecord() {
         stereo1.setRecordName("The Birdie Song");
         assertEquals("I'm a Stereo spinning The Birdie Song",stereo1.playRecord());
+    }
+
+    @Test
+    public void getStereoName() {
+        assertEquals("Sony Stereo", stereo1.getStereoName());
+    }
+
+    @Test
+    public void setStereoName() {
+        stereo1.setStereoName("Setlhare Stereo");
+        assertEquals("Setlhare Stereo", stereo1.getStereoName());
     }
 }
