@@ -38,9 +38,13 @@ public class StereoTest {
 
     @Test
     public void playCD() {
+        stereo1.setCdName("Korn");
+        assertEquals("I'm a Stereo playing Korn", stereo1.playCD());
     }
 
     @Test
     public void playRecord() {
+        stereo1.setRecordName("The Birdie Song");
+        assertEquals("I'm a Stereo spinning The Birdie Song",stereo1.playRecord());
     }
 }
