@@ -29,6 +29,28 @@ public class RecordDeckTest {
     public void setRecordName() {
         recordDeck1.setRecordName("Little Richard");
         assertEquals("Little Richard", recordDeck1.getRecordName());
-
     }
+
+    @Test
+    public void isTurnedOn(){
+        assertEquals(true, recordDeck1.isTurnedOn());
+    }
+
+    @Test
+    public void isTurnedOff(){
+        recordDeck2.setTurnedOn(false);
+        assertEquals(false, recordDeck2.isTurnedOn());
+    }
+
+    @Test
+    public void getVolumeLevel(){
+        assertEquals(0,recordDeck1.getVolumeLevel());
+    }
+
+    @Test
+    public void setVolumeLevel(){
+        recordDeck1.setVolumeLevel(7);
+        assertEquals(7,recordDeck1.getVolumeLevel());
+    }
+
 }

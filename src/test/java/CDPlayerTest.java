@@ -30,4 +30,27 @@ public class CDPlayerTest {
         cdPlayer1.setCdName("Iron Maiden");
         assertEquals("Iron Maiden", cdPlayer1.getCdName());
     }
+
+    @Test
+    public void isTurnedOn__true(){
+        assertEquals(true,cdPlayer1.isTurnedOn());
+    }
+
+    @Test
+    public void setTurnedOn__false(){
+        cdPlayer1.setTurnedOn(false);
+        assertEquals(false,cdPlayer1.isTurnedOn());
+    }
+
+    @Test
+    public void getVolumeLevel(){
+        assertEquals(0,cdPlayer1.getVolumeLevel());
+    }
+
+    @Test
+    public void setVolumeLevel(){
+        cdPlayer1.setVolumeLevel(7);
+        assertEquals(7,cdPlayer1.getVolumeLevel());
+    }
+
 }
