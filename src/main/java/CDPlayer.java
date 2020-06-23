@@ -1,4 +1,4 @@
-public class CDPlayer extends Component {
+public class CDPlayer extends Component implements IPlayCD {
 
     private String cdName;
 

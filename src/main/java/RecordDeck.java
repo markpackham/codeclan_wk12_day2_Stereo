@@ -1,4 +1,4 @@
-public class RecordDeck extends Component{
+public class RecordDeck extends Component implements IPlayRecord{
     private String recordName;
 
     public RecordDeck() {
@@ -16,6 +16,5 @@ public class RecordDeck extends Component{
     public void setRecordName(String recordName) {
         this.recordName = recordName;
     }
-
 
 }
