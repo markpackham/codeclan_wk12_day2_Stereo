@@ -53,4 +53,15 @@ public class CDPlayerTest {
         assertEquals(7,cdPlayer1.getVolumeLevel());
     }
 
+    @Test
+    public void turnOn(){
+        cdPlayer1.turnOn();
+        assertEquals(true,cdPlayer1.isTurnedOn());
+    }
+
+    @Test
+    public void turnOff(){
+        cdPlayer1.turnOff();
+        assertEquals(false,cdPlayer1.isTurnedOn());
+    }
 }

@@ -53,4 +53,15 @@ public class RecordDeckTest {
         assertEquals(7,recordDeck1.getVolumeLevel());
     }
 
+    @Test
+    public void turnOn(){
+        recordDeck1.turnOn();
+        assertEquals(true,recordDeck1.isTurnedOn());
+    }
+
+    @Test
+    public void turnOff(){
+        recordDeck1.turnOff();
+        assertEquals(false,recordDeck1.isTurnedOn());
+    }
 }
