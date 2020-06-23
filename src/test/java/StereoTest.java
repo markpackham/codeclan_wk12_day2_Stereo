@@ -92,4 +92,15 @@ public class StereoTest {
         stereo1.setStereoName("Setlhare Stereo");
         assertEquals("Setlhare Stereo", stereo1.getStereoName());
     }
+
+    @Test
+    public void headPhone() {
+        assertEquals(null, stereo1.headPhone());
+    }
+
+    @Test
+    public void setHeadPhone() {
+        stereo1.setHeadPhone("Groovy Headphone");
+        assertEquals("Groovy Headphone", stereo1.headPhone());
+    }
 }

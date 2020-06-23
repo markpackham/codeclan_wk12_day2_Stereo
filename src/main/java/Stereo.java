@@ -1,13 +1,15 @@
-public class Stereo extends Component implements IPlayCD, IPlayRecord {
+public class Stereo extends Component implements IPlayCD, IPlayRecord, IHeadPhone {
 
     private String stereoName;
     private String cdName;
     private String recordName;
+    private String headPhone;
 
     public Stereo(String stereoName) {
         this.stereoName = stereoName;
         this.cdName = cdName;
         this.recordName = recordName;
+        this.headPhone = headPhone;
     }
 
     public String getStereoName() {
@@ -42,5 +44,13 @@ public class Stereo extends Component implements IPlayCD, IPlayRecord {
         return "I'm a Stereo spinning "+recordName;
     }
 
+
+    public String headPhone() {
+        return headPhone;
+    }
+
+    public void setHeadPhone(String headPhone) {
+        this.headPhone = headPhone;
+    }
 
 }
