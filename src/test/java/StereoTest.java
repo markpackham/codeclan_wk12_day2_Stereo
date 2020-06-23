@@ -37,6 +37,40 @@ public class StereoTest {
     }
 
     @Test
+    public void isTurnedOn(){
+        assertEquals(true, stereo1.isTurnedOn());
+    }
+
+    @Test
+    public void isTurnedOff(){
+        stereo1.setTurnedOn(false);
+        assertEquals(false, stereo1.isTurnedOn());
+    }
+
+    @Test
+    public void getVolumeLevel(){
+        assertEquals(0,stereo1.getVolumeLevel());
+    }
+
+    @Test
+    public void setVolumeLevel(){
+        stereo1.setVolumeLevel(7);
+        assertEquals(7,stereo1.getVolumeLevel());
+    }
+
+    @Test
+    public void turnOn(){
+        stereo1.turnOn();
+        assertEquals(true,stereo1.isTurnedOn());
+    }
+
+    @Test
+    public void turnOff(){
+        stereo1.turnOff();
+        assertEquals(false,stereo1.isTurnedOn());
+    }
+
+    @Test
     public void playCD() {
         stereo1.setCdName("Korn");
         assertEquals("I'm a Stereo playing Korn", stereo1.playCD());
