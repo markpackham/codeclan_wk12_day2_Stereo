@@ -7,5 +7,9 @@ public class MP3Player implements IConnect {
         return stereo.getStereoName();
     }
 
+    public static String staticString(){
+        return "Howdy I am a static String, no objects needed here!";
+    }
+
 
 }

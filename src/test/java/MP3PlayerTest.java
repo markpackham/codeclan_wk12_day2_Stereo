@@ -22,4 +22,9 @@ public class MP3PlayerTest {
     public void connect() {
         assertEquals("Sony Stereo",mp3Player1.connect(stereo1));
     }
+
+    @Test
+    public void staticString() {
+        assertEquals("Howdy I am a static String, no objects needed here!", MP3Player.staticString());
+    }
 }
